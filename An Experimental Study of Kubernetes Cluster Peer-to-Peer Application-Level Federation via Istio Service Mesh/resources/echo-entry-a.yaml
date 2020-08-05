@@ -1,0 +1,18 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: ServiceEntry
+metadata:
+  name: echo
+spec:
+  hosts:
+  - echo.istio.svc.cluster.local
+  ports:
+  - name: http
+    number: 80
+    protocol: http
+  resolution: STATIC
+  location: MESH_INTERNAL
+  endpoints:
+  - address: 35.233.195.16
+    locality: us-west1/us-west1-b
+    ports:
+      http: 15443
