@@ -1,0 +1,18 @@
+global:
+
+    multiCluster:
+      enabled: true
+
+    mtls:
+      enabled: true
+
+    controlPlaneSecurityEnabled: true
+
+security:
+    selfSigned: false
+
+
+#global.multiCluster.enabled
+#global.mtls.enabled
+#global.controlPlaneSecurityEnabled
+#security.selfSigned
